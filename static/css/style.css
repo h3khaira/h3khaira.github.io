@@ -4,12 +4,8 @@ body, html {
 
 /* The hero image */
 .hero-image {
-background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("static/images/mountains.png");
-
-/* Set a specific height */
+background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/mountains.png");
 height: 50%;
-
-/* Position and center the image to scale nicely on all screens */
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
@@ -35,8 +31,8 @@ color: white;
   margin: 5px 2px;
   color: white;
   top: 50%;
-  left: 50%;
-  transform: translate(-75%, -20%);
+  left: 100%;
+  transform: translate(-50%, -30%);
 }
 
 #star-icon{
@@ -158,6 +154,7 @@ color: white;
   color:white;
 }
 
+/*
 .navbar{
   overflow: hidden;
   position: fixed;
@@ -165,6 +162,6 @@ color: white;
   width: 100%;
   z-index: 9999;
 }
-
+*/
 
 
