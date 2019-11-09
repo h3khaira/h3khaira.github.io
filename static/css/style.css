@@ -23,8 +23,8 @@ color: white;
 }
 
 #fa-center.fa{
-  font-size: 40px;
-  width: 50px;
+  font-size:2.5rem;
+  width: 2.5rem;
   text-decoration: none;
   margin: 5px 2px;
   color: white;
@@ -37,7 +37,7 @@ top: 50%;
 */
 
 #star-icon{
-  font-size: 25px;
+  font-size: 2rem;
 }
 /* remove white space from bottom of navbar */
 .navbar {
