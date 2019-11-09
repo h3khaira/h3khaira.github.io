@@ -5,7 +5,7 @@ body, html {
 /* The hero image */
 .hero-image {
 background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/mountains.png");
-height: 50%;
+height: 60%;
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
@@ -31,8 +31,8 @@ color: white;
   margin: 5px 2px;
   color: white;
   top: 50%;
-  left: 100%;
-  transform: translate(-50%, -30%);
+  left: 50%;
+  transform: translate(100%, -30%);
 }
 
 #star-icon{
@@ -155,14 +155,11 @@ color: white;
   font-size: 1.5rem;
 }
 
-/*
 .navbar{
-  overflow: hidden;
   position: fixed;
-  top: 0; 
   width: 100%;
-  z-index: 9999;
+  top: 0;
+  z-index: 999;
 }
-*/
 
 
