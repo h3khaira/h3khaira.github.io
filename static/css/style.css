@@ -164,9 +164,21 @@ top: 50%;
 }
 
 .std-article {
-    width: 75%;
+    width: 60%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 5rem;
+}
+
+.quote {
+  text-align: center;
+  border-style: outset;
+  border: 2px solid grey;
+  border-radius: 0.1rem;
+  margin-bottom: 0.75rem;
+}
+
+.subtitle {
+  text-align: center;
 }
 
