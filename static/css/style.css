@@ -297,3 +297,15 @@ li strong {
 .resume-small-caps {
     font-variant: small-caps;
 }
+
+body > article > h1{
+    font-family: georgia,garamond,serif;
+    font-size: 3rem;
+}
+
+body > article > p{
+    font-family: georgia,garamond,serif;
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+    line-height: 2.5rem;
+}
