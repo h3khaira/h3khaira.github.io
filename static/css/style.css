@@ -197,7 +197,7 @@ top: 50%;
     text-align: center;
 }
 
-.resume-grey {
+.resume-grey {1abc9y
     color: #666666;
 }
 
@@ -327,7 +327,6 @@ body > article >h2{
     margin: auto;
 }
 
-.carousel-indicators,
 .carousel-control-next-icon,
 .carousel-control-prev-icon {
     filter: invert(1);
