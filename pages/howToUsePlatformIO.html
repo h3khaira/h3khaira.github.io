@@ -96,7 +96,21 @@
                 </p>
                 <p>Once the STM32 cube programmer is installed, connect the Blue Pill to your computer via the
                     ST-LINK/V2. Use jumper cables to connect the SWDIO, SWDCK, 3v and ground pins on the ST-LINK/V2 to
-                    the Blue Pill.</p>
+                    the Blue Pill. Within the cube programmer, navigate to the HID bootloader binary that applies to
+                    your specific board. For my board the binary file was located in
+                    <a style="font-style: italic;">/stm32_binaries/F103/low_and_medium_density/hid_generic_pc13.bin.</a>
+                    Before flashing the bootloader, ensure that the BOOT0 jumper on the board is set to "1". Once this
+                    is done, flash this binary on the Blue Pill and move the BOOT0 jumper back to the "0" position, then
+                    press the reset buttom. The built in LED on the board should start rapidly
+                    blinking if this is successfull.
+                </p>
+                <p>This bootloader enables you to upload code and debug through the serial monitor on the Blue Pill,
+                    eliminating the need to use an ST-LINK/V2. However, there are some special settings in Platform.io
+                    we need to use for this to work. Below is what my platform.ini configuration file looks like using
+                    the arduino framework on the Blue Pill. Ensure that you use the same build flags in your
+                    configuration, otherwise the bootloader will be wiped after uploading code and you will have to
+                    re-flash it on the board. Additionally, you might need to change the <a style="font-style: italic;">
+                        upload_port</a> option depending on your situation.</p>
                 <script src="https://gist.github.com/h3khaira/df64ed75e5b98268c0b92854737490e6.js"></script>
             </div>
         </div>
