@@ -197,7 +197,7 @@ top: 50%;
     text-align: center;
 }
 
-.resume-grey {1abc9y
+.resume-grey {
     color: #666666;
 }
 
@@ -264,9 +264,6 @@ li strong {
     color: #878787;
 }
 
-#section_activities {
-    /*page-break-before: always;*/
-}
 
 .section_sub {
     margin-bottom: 10px;
@@ -304,23 +301,6 @@ li strong {
     font-variant: small-caps;
 }
 
-body > article > h1{
-    font-family: georgia,garamond,serif;
-    font-size: 3rem;
-}
-
-body > article > p{
-    font-family: georgia,garamond,serif;
-    font-size: 1.25rem;
-    margin-bottom: 1.5rem;
-    line-height: 2.5rem;
-}
-
-body > article >h2{
-    font-family: georgia,garamond,serif;
-    font-size: 2.25rem;
-}
-
 .carousel-inner img {
     display: block;
     height: 500px;
@@ -344,3 +324,4 @@ body > article >h2{
 .carousel-caption p{
     color: white;
 }
+

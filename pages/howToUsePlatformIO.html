@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HARSEERAT KHAIRA</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="description" content="Harseerat Khaira's Personal Website" />
+    <meta name="keywords" content="Harseerat, Khaira, Harseerat Khaira, platformIO, STM32, blue pill, STM32F103C8T6" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../static/css/style.css" />
+    <link rel="icon" href="../static/images/gears.png" />
+    <script src="../static/js/scripts.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="resume.html">Resume</a>
+            </li>
+            <li class="nav-item dropdown active">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Articles
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="howToUsePlatformIO.html">How to use platform.io with
+                        STM32F103C8T6 Blue Pill</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="mx-auto order-0">
+        <a class="navbar-brand mx-auto" href="index.html">HARSEERAT KHAIRA</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+    <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="mailto:contact@harseeratkhaira.com">Email <i class="fa fa-envelope-o"
+                        style="font-size: 1rem; color:white;"></i></a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 mx-auto">
+                <h1 style="font-size: 2.5rem; text-align: center; padding-top: 2rem;">How to use Platform.io to program
+                    and debug
+                    STM32F103C8T6 Blue Pill
+                    Development board over USB</h1>
+                <p>
+                    The STM32F103C8T6 Blue Pill development board is a powerful alternative to a standard Arduino board
+                    such
+                    as
+                    the Arduino Uno. It is equipped with a powerful 32-bit Arm processesor that is leagues ahead of the
+                    ATmega
+                    8-bit processors in an Arduino Uno. This is one of the main reasons I decided to use a Blue Pill
+                    board
+                    for
+                    my drone flight controller project. However, I quickly realized the relative difficulty of setting
+                    up a
+                    development environment for this board to
+                    allow for easy upload of code and debugging.
+                </p>
+                <p>So I have written this article to summarize what I've learned and help anyone else going through the
+                    same
+                    process. In this article I will go through how to set up a development environment for the Blue Pill
+                    in
+                    platform.io. Here's what we will need:</p>
+                <ul class="list-group" style="padding-bottom: 1rem;">
+                    <li class="list-group-item">An STM32F103C8T6 Blue Pill development board</li>
+                    <li class="list-group-item">A mini USB cable</li>
+                    <li class="list-group-item">An ST-LINK/V2 debugger and programmer</li>
+                    <li class="list-group-item">4 x jumper cables</li>
+                </ul>
+                <p>Firstly, we need to flash the HID bootloader on the board to enable us to upload code through USB as
+                    well as debugging through the serial monitor. For this, we will need the STM32 Cube Programmer,
+                    which can be downloaded from
+                    <a href="https://www.st.com/en/development-tools/stm32cubeprog.html">here.</a> In addition, we also
+                    need
+                    the bootloader binaries, which can be downloaded from the github repository found <a
+                        href="https://github.com/Serasidis/STM32_HID_Bootloader/releases">here.</a> Download the folder
+                    labeled as "stm32_binaries.zip" and unzip this folder.
+                </p>
+                <p>Once the STM32 cube programmer is installed, connect the Blue Pill to your computer via the
+                    ST-LINK/V2. Use jumper cables to connect the SWDIO, SWDCK, 3v and ground pins on the ST-LINK/V2 to
+                    the Blue Pill.</p>
+                <script src="https://gist.github.com/h3khaira/df64ed75e5b98268c0b92854737490e6.js"></script>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
