@@ -116,6 +116,15 @@
                     re-flash it on the board. Additionally, you might need to change the <a style="font-style: italic;">
                         upload_port</a> option depending on your setup.</p>
                 <script src="https://gist.github.com/h3khaira/df64ed75e5b98268c0b92854737490e6.js"></script>
+                <p>If you get the following error: "hid-flash not found" while trying to upload the program to the
+                    board,
+                    you can easily solve this by getting the appropriate hid-flash binary from the bootloader<a
+                        href="https://github.com/Serasidis/STM32_HID_Bootloader/releases"> here.</a> and placing it in
+                    the <code>~/.platformio/packages/tool-stm32duino directory.</code>
+                </p>
+                <p>You might also face issues with uploading the program to the /dev/ttyACM0 port due to permissions
+                    issues. In this case, simply add your user to the "dialout" group by running the command
+                    <code>sudo adduser $USER dialout</code> and rebooting.</p>
             </div>
         </div>
     </div>
